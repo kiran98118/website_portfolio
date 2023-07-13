@@ -1,3 +1,10 @@
+:root {
+  --body-font: Arial, sans-serif;
+  --normal-font-size: 16px;
+  --text-color: #333;
+  --body-color: #f5f5f5;
+}
+
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -8,6 +15,7 @@ body {
 }
 
 
+/* Navbar */
 .nav {
   position: fixed;
   top: 0;
@@ -20,12 +28,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .nav .logo {
+  margin-left: 50px;
   color: #007bff;
 }
 
@@ -35,6 +43,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-right: 32px;
 }
 
 .nav .nav-links li {
@@ -54,6 +63,8 @@ body {
   width: 60px;
 }
 
+
+/* Main Section */
 .main {
   margin-top: 14vh;
   padding: 2rem;
@@ -61,10 +72,13 @@ body {
   transition: 0.3s;
 }
 
+
+/* Home Section */
 #home {
   margin-top: 6%;
   height: 100vh;
   width: 100%;
+
   background-attachment: fixed;
   background-size: cover;
   display: flex;
@@ -78,15 +92,12 @@ body {
 
 #home .profile {
   display: flex;
-  
   max-width: 900px;
   margin: 0 auto;
   padding: 80px;
 }
 
-
 #home .profile-info {
-  
   margin-top: -220px; 
   margin-left: 18%;
 }
@@ -98,8 +109,8 @@ body {
   margin-bottom: 10px;
 }
 
-.name{
-  color:#007bff;
+.name {
+  color: #007bff;
 }
 
 #home .l {
@@ -108,7 +119,7 @@ body {
   grid-template-columns: auto 1fr;
   justify-content: flex-start;
   margin-top: 20px;
-  gap:20px;
+  gap: 20px;
   font-size: 30px;
   font-weight: 500;
   overflow: hidden;
@@ -116,14 +127,13 @@ body {
 }
 
 #home .profile-content {
-  
 }
 
 #home .social-icons {
   display: flex;
   flex-direction: column; 
   align-items: flex-start; 
-  margin-left: 50px; 
+  margin-left: 0px; 
   margin-top: -130px;
   justify-content: flex-start;
 }
@@ -132,21 +142,21 @@ body {
   display: block;
   font-size: 28px;
   text-decoration: none;
-  
   margin-right: 0; 
   margin-top: 19px; 
   margin-bottom: 10px; 
   float: left; 
 }
+
 #home .p {
   font-size: 20px;
   font-weight: 300;
   margin: 0;
 }
-.logo{
-  color:#007bff;
-}
 
+.logo {
+  color: #007bff;
+}
 
 .contact-btn {
   display: inline-block;
@@ -172,6 +182,8 @@ body {
 
 
 
+
+/* About Section */
 .about {
   margin-top: 11%;
   padding: 50px;
@@ -181,9 +193,8 @@ body {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 30px;
-  top:10px;
+  top: 10px;
   position: sticky;
-  
 }
 
 .row {
@@ -191,7 +202,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-   
   margin-top: 5%;
 }
 
@@ -212,7 +222,7 @@ body {
   flex: 1;
   max-width: 500px;
   margin-top: 20px; 
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .info {
@@ -260,54 +270,51 @@ body {
   margin-bottom: 13%;
 }
 
-.cv button:hover{
+.cv button:hover {
   background-color: #45a049;
 }
 
 
-
-
+/* Skills Section */
 .skills {
   padding: 25px;
   row-gap: 5rem;
-  
-  
 }
 
 .skills .heading {
   text-align: center;
   margin-bottom: 30px;
   position: sticky;
-  top:80px;
+  top: 80px;
   z-index: 999;
   background-color: #fff;
 }
+
 .skills .sub-heading {
   text-align: center;
   margin-bottom: var(--mb-4);
 }
-.text{
+
+.text {
   margin-bottom: var(--mb-4);
 }
 
-.skills .heading .ccontent{
+.skills .heading .ccontent {
   width: 100%;
 }
 
-.skills-description{
+.skills-description {
   margin-top: 5%;
   margin-bottom: 50px;
   margin-left: 10px;
 }
 
-.skills-description h3{ 
+.skills-description h3 {
   font-size: 2em;
   margin-bottom: 5px;
-  
-  
 }
 
-.skills-info{
+.skills-info {
   max-width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -316,15 +323,11 @@ body {
   margin-left: auto;
 }
 
-.skills-info h4{
+.skills-info h4 {
   margin-bottom: 20px;
-  
 }
 
-
-
-
-.skills-info h4 label{
+.skills-info h4 label {
   background: #007bff;
   color: #fff;
   font-size: var(--normal-font-size);
@@ -335,10 +338,8 @@ body {
 }
 
 
-
-
-
-.education-all{
+/* Education Section */
+.education-all {
   margin-bottom: 80px;
   margin-left: 5%;
 }
@@ -364,12 +365,12 @@ body {
   font-weight: 500;
 }
 
-.education .e{
+.education .e {
   margin-left: 10%;
 }
+
 .skills-list {
   display: flex;
-  
   justify-content: space-between;
   position: relative;
   font-weight: var(--font-semi);
@@ -409,7 +410,7 @@ body {
   border-radius: 2px;
 }
 
-.bar .line:before{
+.bar .line:before {
   content: '';
   position: absolute;
   height: 100%;
@@ -419,21 +420,23 @@ body {
   border-radius: 2px;
 }
 
-.bar .html:before{
+.bar .html:before {
   width: 95%;
 }
 
-.bar .css:before{
+.bar .css:before {
   width: 90%;
 }
 
-.bar .js:before{
+.bar .js:before {
   width: 80%;
 }
-.bar .sql:before{
+
+.bar .sql:before {
   width: 80%;
 }
-.bar .python:before{
+
+.bar .python:before {
   width: 85%;
 }
 
@@ -458,7 +461,7 @@ body {
   font-weight: 500;
 }
 
-.skills__icon{
+.skills__icon {
   font-size: 2rem;
   margin-right: var(--mb-2);
   color: #361d9a;
@@ -533,12 +536,13 @@ body {
   font-weight: 500;
 }
 
+
+/* Portfolio Section */
 .portfolio .title {
   text-align: center;
   margin-bottom: 30px;
   margin-top: 10%;
   position: sticky;
-  
 }
 
 .portfolio .subtitle {
@@ -558,19 +562,20 @@ body {
   list-style: none;
 }
 
-@media (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   .s1 {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .s1 {
-      grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
 
+/* Grid Section */
 .grid1 {
   display: flex;
   align-items: left;
@@ -588,7 +593,6 @@ body {
 
 .grid1 .data {
   margin-top: 20px;
-  
 }
 
 .grid1 .title1 {
@@ -614,25 +618,28 @@ button a {
   color: #fff;
   text-decoration: none;
 }
-button:hover{
-  
+
+button:hover {
 }
 
 button:hover .i {
   transform: translateX(0.25rem);
 }
 
+
+/* Contact Section */
 .contact {
   padding: 50px;
-  
 }
-.contact_info{
+
+.contact_info {
   text-align: center;
 }
 
 .contact .title {
   text-align: center;
 }
+
 .contact_info {
   display: flex;
   align-items: center;
@@ -655,24 +662,25 @@ button:hover .i {
   color: #555;
 }
 
-.containers{
+.containers {
   border-radius: 5px;
   background-color: #f2f2f2;
   width: 66%;
   margin-left: 17%;
-  padding:20px;
+  padding: 20px;
 }
 
-input[type=text], select, textarea{
-  width:100%;
-  padding:12px;
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
   margin-top: 6px;
   margin-bottom: 16px;
   box-sizing: border-box;
   resize: vertical;
   border: 1px solid #ccc;
   border-radius: 4px;
-
 }
 
 .button {
@@ -694,4 +702,131 @@ input[type=text], select, textarea{
 
 .button i {
   margin-left: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .nav .nav-links {
+    display: none;
+  }
+
+  .nav .logo {
+    margin-left: 20px;
+  }
+
+  .nav .nav-links.responsive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav .nav-links.responsive li {
+    margin: 1rem 0;
+  }
+
+  .main {
+    padding: 1rem;
+  }
+
+  #home .profile {
+    padding: 2rem;
+  }
+
+  #home .profile-info {
+    margin-top: -120px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  #home .l {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    gap: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #home .social-icons {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .about {
+    margin-top: 8%;
+    padding: 30px;
+  }
+
+  .about .heading {
+    top: 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .info {
+    margin-right: 0;
+    justify-content: center;
+    margin-top: -10px;
+    margin-bottom: 20px;
+  }
+
+  .info li {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .cv {
+    margin-top: 50px;
+  }
+
+  .skills {
+    padding: 20px;
+    row-gap: 3rem;
+  }
+
+  .skills .heading {
+    top: 0;
+    position: sticky;
+    margin-bottom: 20px;
+  }
+
+  .skills-description {
+    margin-top: 3%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .skills-info {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .portfolio .title {
+    margin-top: 8%;
+  }
+
+  .portfolio .subtitle {
+    margin-bottom: 50px;
+  }
+
+  .s1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .grid1 {
+    padding: 10px;
+  }
+
+  .containers {
+    width: 90%;
+    margin-left: 5%;
+    padding: 10px;
+  }
 }
