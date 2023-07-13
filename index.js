@@ -1,4 +1,4 @@
-// Smooth scrolling for anchor links
+
 const anchorLinks = document.querySelectorAll('a[href^="#"]');
 for (let anchor of anchorLinks) {
   anchor.addEventListener('click', function (e) {
@@ -13,7 +13,7 @@ for (let anchor of anchorLinks) {
   });
 }
 
-// Activate current nav link based on the section in view
+
       const sections = document.querySelectorAll('section');
       const navLinks = document.querySelectorAll('.nav-links a');
 
@@ -33,9 +33,6 @@ for (let anchor of anchorLinks) {
          }
       });
 
-
-
-  // Add 'active' class to corresponding nav link
   navLinks.forEach(function (navLink) {
     navLink.classList.remove('active');
     if (navLink.getAttribute('href') === `#${currentSection}`) {
@@ -44,16 +41,14 @@ for (let anchor of anchorLinks) {
   });
 });
 
-// Download CV functionality
 const downloadCVButton = document.querySelector('.downloadcv');
 downloadCVButton.addEventListener('click', function () {
   const resumeURL = 'myresume.pdf';
   window.open(resumeURL);
 });
 
-const navToggle = document.querySelector('.nav__toggle');
-const navMenu = document.querySelector('.nav__menu');
-navToggle.addEventListener('click', function () {
-   navMenu.classList.toggle('nav__menu--active');
-});
+
+
+
+
 
