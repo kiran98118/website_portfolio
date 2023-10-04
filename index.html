@@ -5,9 +5,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+   
    <link rel="stylesheet" href="style.css">
-
+    
    <title>My portfolio</title>
 </head>
 <body>
@@ -40,7 +40,7 @@
                 <h1>Hi, I'm <span class="name">Sai Kiran</span></h1>
                 <h3>Software Engineer</h3>
                 <div class="l"><p class="p">I’m Sai Kiran, a passionate and dedicated software engineer with expertise in Javascript, Java, Python and more. With a strong educational background in Computer Engineering and hands-on experience in developing applications and working with databases, I bring a comprehensive skill set to every project.</p></div>
-                <a href="#" class="contact-btn">Contact Me <i class=" fas fa-envelope"></i> </a>
+                <a href="#contact" class="contact-btn">Contact Me <i class=" fas fa-envelope"></i> </a>
               </div>
               
              
@@ -297,20 +297,22 @@
         </div>
 
         <div class="containers">
-            <form  name="submit-to-google-sheet">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" placeholder="please enter your full name">
+            <form action="https://formsubmit.co/kiran98118@gmail.com" method="POST"> 
+                <input type="hidden" name="_subject" value="New Email">
+                <input type="hidden" name="_next" value="https://kiran98118.github.io/website_portfolio/thankyou.html">
+                <label  for="name">Full Name</label>
+                <input name="name" type="text" id="name" placeholder="please enter your full name">
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="abc@xyz.com">
+                <input name="email" type="text" id="email" placeholder="abc@xyz.com" required>
                 
 
                 <label for="message">Message</label>
-                <textarea id="message" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea name="message" id="message" placeholder="Send a message" style="height:200px"></textarea>
                <button type="submit" class="btn ">submit</button>
 
             </form>
         </div>
-
+            
       </section>
    </main>
 
